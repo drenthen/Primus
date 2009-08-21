@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusAction1">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.ui.popupMenus">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_1"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusActionPrimitivesOfType">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_primitives_of_type"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusActionAddPrimitive">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_add_primitive"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusActionAddPattern">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_add_pattern"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusActionAddPrimitiveToPackage">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_add_component_to_package"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+
+<extension
+      point="org.eclipse.ui.popupMenus">
+   <contributionItemProvider
+         checkPluginLoaded="true"
+         class="action.PrimusActionAddPrimitiveToPackage">
+      <Priority
+            name="Medium">
+      </Priority>
+      <popupContribution
+            class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramContextMenuProvider">
+         <popupMenuGroup
+               id="PrimusGroup"
+               path="/propertiesGroup">
+         </popupMenuGroup>
+         <popupMenu
+               id="primus_action_add_component_to_package"
+               path="/PrimusGroup">
+         </popupMenu>
+         <popupStructuredContributionCriteria
+               objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+               objectCount="1">
+         </popupStructuredContributionCriteria>
+      </popupContribution>
+   </contributionItemProvider>
+</extension>
+<extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart"
+            id="menutestnew.contribution1">
+         <menu
+               label="New Submenu"
+               path="additions"
+               id="menutestnew.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="New Action"
+               class="menutestnew.popup.actions.NewAction"
+               menubarPath="menutestnew.menu1/group1"
+               enablesFor="1"
+               id="menutestnew.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</fragment>
